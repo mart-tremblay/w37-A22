@@ -28,8 +28,8 @@
             if ( have_posts() ) :
                 while(have_posts()):
                     the_post();
-                    the_title("<h1>", "</h1>");
-                    the_content("<p style='color: crimson'", "</p>");
+                    the_title("<h1 style='color: crimson'>", "</h1>");
+                    the_content();
                 endwhile;
             endif;
         ?>
