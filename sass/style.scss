@@ -26,3 +26,11 @@ Text Domain: underscore
 @import "base/body";
 @import "base/headings";
 @import "base/simple";
+
+/* Composants */
+@import "composants/nav_principal";
+
+/* Layout */
+@import "layouts/content-sidebar";
+@import "layouts/no-sidebar";
+@import "layouts/sidebar-content";
