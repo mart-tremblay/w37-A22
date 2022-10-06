@@ -12,18 +12,19 @@
  * @package underscore
  */
 ?>
-
 <?php get_header(); ?>
 
 <main>
+<!--    <h1 class="trace">Page de type : "front-page" (front-page.php) </h1>-->
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post();
                 the_title('<h1>','</h1>');
-                the_content(null, true);
-                endwhile;
-        endif;
+                the_permalink();
+    the_content(null, true);
+    endwhile;
+    endif;
     ?>
 </main>
 

@@ -338,8 +338,12 @@ html {
 
 /* Les éléments de base */
 body {
-  background-color: lightblue;
+  background-color: coral;
   font-family: "Verdana";
+}
+
+main {
+  margin: 0 1rem;
 }
 
 .trace {

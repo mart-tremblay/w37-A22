@@ -12,7 +12,7 @@
  * @package underscore
  */
 ?>
-
+<h1 class="trace">Page de type : single (single.php)</h1>
 <?php get_header(); ?>
 
 <main>
@@ -21,9 +21,9 @@
             while ( have_posts() ) :
 				the_post();
                 the_title('<h1>','</h1>');
-                the_content(null, true);
-                endwhile;
-        endif;
+    the_content(null, true);
+    endwhile;
+    endif;
     ?>
 </main>
 
