@@ -1,12 +1,11 @@
 body {
-	background-color: $couleur__background-body;
-	font-family: $police__base;
+  background-color: $couleur__background--body;
 }
 
 main {
-	margin: 0 1rem;
+  font-family: $police__main;
 }
 
-.trace{
-	background-color: lightblue;
+.trace {
+  background-color: #0f0;
 }
