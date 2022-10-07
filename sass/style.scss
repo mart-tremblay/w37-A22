@@ -1,36 +1,44 @@
 /*!
-Theme Name: A22_underscrore_exercice1
+Theme Name: A22-31W-COURS
 Theme URI: http://underscores.me/
-Author: Martin Tremblay
-Author URI: http://underscores.me/
-Description: Theme de base
+Author: Eddy Martin
+Author URI: http://Referenced.ca
+Description: Thème de base
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: underscore
+Text Domain: 31w
 */
 
+/* -------------------------------------------------------------- */
 
-/* importation des variables */
+// Importation des variables.
 @import "variables/couleurs";
-@import "variables/polices";
 @import "variables/structure";
+@import "variables/polices";
 
+// normalize et box-sizing
 @import "generic/normalize";
 @import "generic/box-sizing";
 
-
-/* Les éléments de base */
+// les éléments de base
 @import "base/body";
-@import "base/headings";
+@import "base/heading";
 @import "base/simple";
+@import "base/links";
+@import "base/buttons";
+@import "base/fields";
+@import "base/hr";
+@import "base/lists";
+@import "base/media";
 
-/* Composants */
+// Les composants
 @import "composants/nav_principal";
+@import "composants/nav_aside";
+@import "composants/_entete";
 
-/* Layout */
-@import "layouts/content-sidebar";
-@import "layouts/no-sidebar";
+// Layout
+
 @import "layouts/sidebar-content";
