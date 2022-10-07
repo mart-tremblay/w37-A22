@@ -11,9 +11,9 @@
 
 ?>
 
-<footer>
-    Exercice 1
-</footer><!-- #colophon -->
+	<footer>
+        <p>Mon pied de page</p>
+	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

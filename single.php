@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The main template file
@@ -12,20 +13,40 @@
  * @package underscore
  */
 ?>
-<h1 class="trace">Page de type : single (single.php)</h1>
+<h1 class="trace">single.php</h1>
 <?php get_header(); ?>
 
-<main>
+    <main class="site__main">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
-				the_post();
-                the_title('<h1>','</h1>');
-    the_content(null, true);
-    endwhile;
-    endif;
-    ?>
-</main>
-
+				the_post(); 
+                the_title('<h2>','</h2>');
+                the_content(null, true);?>
+                <section>
+                    <small>
+                        <span><?php the_weekday(); ?></span> 
+                        <span><?php the_date(); ?></span> 
+                        <span><?php the_time(); ?></span>  
+                    </small>
+                    <code><?php the_author(); ?></code>
+                    <pre><?php the_category(); ?></pre>
+                </section>
+                <?php 
+               
+               
+                
+               
+            endwhile;
+        endif;
+    ?>    
+    </main>  
+  
 <?php get_footer(); ?>
 </html>
+
+
+
+
+
+
