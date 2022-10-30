@@ -22,23 +22,12 @@ $couleur__background--h2h3h4: rgb(16, 12, 114);
 $couleur__background--code: #bbb;
 */
 /* ----------------------------------- Couleur d'arrière plan titres */
-/*
-$couleur__background--h1: rgba(233, 237, 248, 0.971);
-$couleur__background--h2h3h4: rgb(215, 215, 231);
-$couleur__background--h5h6: rgb(154, 153, 172);
-$couleur__background--code: rgb(213, 208, 230);
-*/
 /* --------------------------------------- couleur   color :  */
 /* --------------------- Couleurs des liens */
 /* ----------------------------- couleur bouton */
 /* ----------------------------- couleur fields input text */
 /* ------------------------------ couleur hr (ligne horizontale) */
 /* ---------  simple */
-/*
-$color__background-pre: rgb(158, 213, 196);
-$color__border-abbr: #aaa;
-$color__background-ins: #bbb;
-*/
 /* ------------------------  simple */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -362,11 +351,11 @@ html {
 }
 
 body {
-  background-color: lightyellow;
+  background-color: coral;
 }
 
 main {
-  font-family: "Verdana";
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .trace {
@@ -374,19 +363,13 @@ main {
 }
 
 h1 {
-  font-family: "Book Antiqua";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: darkred;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Bookman Old Style";
-}
-
-h1 {
-  font-size: clamp(1.3rem, 2vw, 3rem);
+h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(16, 12, 114);
 }
 
 p {
@@ -409,7 +392,8 @@ address {
 }
 
 pre {
-  font-family: "Fira Code Retina";
+  /*background: $color__background-pre;*/
+  font-family: "Courier New", Courier, monospace;
   line-height: 0.8em;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -421,7 +405,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: "Fira Code";
+  font-family: "Courier New", Courier, monospace;
 }
 
 abbr,
@@ -439,13 +423,13 @@ big {
 }
 
 a {
-  color: darkred;
+  color: #55f;
 }
 a:visited {
-  color: darkgreen;
+  color: #3f3;
 }
 a:hover, a:focus, a:active {
-  color: darkseagreen;
+  color: #8f8;
 }
 a:focus {
   outline: thin dotted;
@@ -548,7 +532,7 @@ textarea {
 }
 
 hr {
-  background-color: black;
+  background-color: rgb(161, 180, 213);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -631,7 +615,7 @@ figure {
 .menu__aside .menu {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 3%;
 }
 /*
 .menu__aside{}
@@ -639,18 +623,17 @@ figure {
 .menu__aside .menu-item {}
 .menu__aside a {}
 */
+.site__branding {
+  margin: 1%;
+  background-color: lightgray;
+}
+
 .site__title {
-  font-size: clamp(2rem, 4vw, 5rem);
+  background-color: lightcoral;
 }
 
-.site__footer {
-  display: flex;
-  justify-content: space-around;
-}
-
-.site__footer div {
-  flex: 1;
-  border: 1px solid #aaa;
+.site__description {
+  background-color: lavenderblush;
 }
 
 .site__header {
@@ -658,25 +641,32 @@ figure {
 }
 
 .site__main {
+  margin: 1%;
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
 .widget__area {
+  margin: 3%;
   grid-area: sidebar;
 }
 
+/*.widget__area h2 {
+    color: darkblue;
+}*/
 .site__footer {
   grid-area: footer;
 }
 
+/* Config ordinateur de bureau */
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar" "main" "header" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
+    display: grid;
     grid-template-columns: 25% auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
