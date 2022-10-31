@@ -1,11 +1,15 @@
 body {
-  background-color: $couleur__background--body;
+    background-color: $couleur__background--body;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
-  font-family: $police__main;
+    font-family: $police__main;
 }
 
 .trace {
-  background-color: red;
+    background-color: grey;
 }

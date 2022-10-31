@@ -1,23 +1,31 @@
 h1 {
-  font-family: $police__titre-principal;
+    font-family: $police__titre-principal;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $police__titre-secondaire;
+    font-family: $police__titre-secondaire;
+    font-size: clamp(1.3rem, 2vw, 3rem);
 }
+
 h1 {
-  font-size: clamp(1.3rem, 2vw, 3rem);
 }
+
 h2 {
 }
+
 h3 {
 }
+
 h4 {
 }
+
 h5 {
 }
+
 h6 {
 }

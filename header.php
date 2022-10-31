@@ -44,7 +44,7 @@
 
 	</header><!-- #masthead -->
 	<aside class="widget__area">
-		<h2>Menu secondaire</h2>
+		<h2>Liste de cours</h2>
 		<?php wp_nav_menu(array(
 					"menu" => "aside",
 					"container" => "nav",
