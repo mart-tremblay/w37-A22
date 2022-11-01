@@ -643,7 +643,8 @@ figure {
 .site__main {
   margin: 1%;
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
 }
 
 .widget__area {

@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The main template file
@@ -16,12 +15,12 @@
 <?php get_header(); ?>
 
     <main class="site__main">
-    <?php
+        <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); 
                 the_title('<h2>','</h2>');
-                the_content(null, true);?>
+                the_content(null, true); ?>
                 <section>
                     <small>
                         <span><?php the_weekday(); ?></span> 
@@ -31,11 +30,7 @@
                     <code><?php the_author(); ?></code>
                     <pre><?php the_category(); ?></pre>
                 </section>
-                <?php 
-               
-               
-                
-               
+    <?php
             endwhile;
         endif;
     ?>    

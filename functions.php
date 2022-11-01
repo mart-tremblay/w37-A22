@@ -43,7 +43,6 @@ function underscore_setup() {
 }    
 add_action( 'after_setup_theme', 'underscore_setup' );
 
-
 /**
  * Enqueue scripts and styles.
  */
@@ -53,23 +52,23 @@ function underscore_scripts() {
 					   get_stylesheet_uri(), 
 					   array(),
 					_S_VERSION );
-	*/				
+	*/
 
 	wp_enqueue_style('underscore-style',
 					 get_template_directory_uri() . '/style.css',
 					 array(), 
 					 filemtime(get_template_directory() . '/style.css'), false);
-	
-}
+
+	}
 add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 
 
-/* ----------------------------------------- Initialisation de la fonction de menu */
+/* ----------------------------------------- Initialisation de la fonction de menu (code adapté de "https://developer.wordpress.org/reference/functions/register_nav_menus/" */
 
 function mon_31w_register_nav_menu(){
 	register_nav_menus( array(
-		'menu_primaire' => __( 'Menu Primaire', 'text_domain' ),
-	
+		'menu_principal' => __( 'Menu principal', 'text_domain' ),
+		'aside' => 'menu secondaire',
 	) );
 }
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
