@@ -1,3 +1,4 @@
+/* Affichage modbile */
 .site {
     display: grid;
     grid-template-columns: auto;
@@ -24,6 +25,7 @@
         grid-area: footer;
     }
 
+    /* Affichage pour écran d'ordinateur */
     @media screen and (min-width: 700px) {
         grid-template-columns: ($size__site-sidebar) auto;
         grid-template-areas:

@@ -27,8 +27,7 @@
                         <span><?php the_date(); ?></span> 
                         <span><?php the_time(); ?></span>  
                     </small>
-                    <code><?php the_author(); ?></code>
-                    <pre><?php the_category(); ?></pre>
+                    <p><?php the_category(); ?></p>
                 </section>
     <?php
             endwhile;
