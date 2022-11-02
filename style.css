@@ -381,6 +381,7 @@ main {
 }
 
 aside h2 {
+  margin: 0.67em;
   color: darkred;
 }
 
@@ -421,6 +422,10 @@ h6 {
 */
 .site__branding, aside, main {
   margin: 0 0.75em 0 0.75em;
+}
+
+main > h2 {
+  color: darkred;
 }
 
 p {
@@ -670,7 +675,7 @@ figure {
   margin: 0;
 }
 .menu__aside .menu-item {
-  margin: 0.5em;
+  margin: 0 0 0.5em 0.5em;
 }
 /*
 .menu__aside{}
@@ -678,6 +683,10 @@ figure {
 .menu__aside .menu-item {}
 .menu__aside a {}
 */
+.site__branding {
+  border-bottom: 1px solid darkred;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
 }
@@ -691,12 +700,20 @@ figure {
 .site__footer {
   display: flex;
   justify-content: space-around;
+  margin-top: 1em;
   background-color: darkred;
   color: lightyellow;
 }
 
 .site__footer div {
   flex: 1;
+  align-self: center;
+  padding-left: 0.25em;
+}
+
+.site__footer .calendrier {
+  background-color: lightyellow;
+  color: black;
 }
 
 /* Affichage modbile */

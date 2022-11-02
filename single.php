@@ -27,7 +27,6 @@
                         <span><?php the_date(); ?></span> 
                         <span><?php the_time(); ?></span>  
                     </small>
-                    <p><?php the_category(); ?></p>
                 </section>
     <?php
             endwhile;
