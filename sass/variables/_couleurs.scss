@@ -8,7 +8,10 @@ $couleur__background--code: #bbb;
 */
 
 $couleur__background--body: lightyellow;
+$couleur__background--barre-navigation: darkred;
+$couleur__texte--barre-navigation : lightyellow;
 //$couleur__background--pre: ;
+
 
 /* ----------------------------------- Couleur d'arrière plan titres */
 /*
@@ -27,11 +30,11 @@ $couleur__code: black;
 /* --------------------- Couleurs des liens */
 $couleur__link: darkred;
 $couleur__link--visited: darkred;
-$couleur__link--hover: darkseagreen;
+$couleur__link--hover: darkred;
 
-$couleur__link__aside: rgb(14, 27, 45);
-$couleur__link__aside--visited: rgb(12, 63, 76);
-$couleur__link__aside--hover: rgb(76, 122, 165);
+$couleur__link__aside: darkred;
+$couleur__link__aside--visited: darkred;
+$couleur__link__aside--hover: darkred;
 
 /* ----------------------------- couleur bouton */
 $color__border-button: #999;
