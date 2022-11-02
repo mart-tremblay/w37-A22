@@ -1,8 +1,10 @@
 .site__footer {
   display: flex;
   justify-content: space-around;
+  background-color: darkred;
+  color: lightyellow;
 }
 .site__footer div {
   flex: 1;
-  border: 1px solid #aaa;
+  //border: 1px dotted darkred;
 }
